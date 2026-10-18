@@ -2,7 +2,7 @@ import PageHeader from "./components/PageHeader";
 import PageContent from "./components/PageContent";
 import PageFooter from "./components/PageFooter";
 
-function App() {
+export default function App() {
   return (
     <>
       <PageHeader />
@@ -11,5 +11,3 @@ function App() {
     </>
   );
 }
-
-export default App;
