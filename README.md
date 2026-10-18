@@ -13,8 +13,8 @@ The website can be viewed locally by running the following commands:
 ### 1. Clone the Repository
 
 ```
-git clone https://github.com/Tyelk/__The_Phoenix_Project__.git
-cd __The_Phoenix_Project__
+git clone https://github.com/Tyelk/IT_Deployment_Evaluation_Tool.git
+cd IT_Deployment_Evaluation_Tool
 ```
 
 ### 2. Install Dependencies
