@@ -35,7 +35,7 @@ export default function FactorSection({
   };
 
   return (
-    <>
+    <div className="factor-section">
       <h2>{factor.name}</h2>
       <h3>{factor.firstMeasurementName}</h3>
       <p>{factor.firstMeasurementDescription}</p>
@@ -64,6 +64,6 @@ export default function FactorSection({
           </option>
         ))}
       </select>
-    </>
+    </div>
   );
 }

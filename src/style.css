@@ -1,6 +1,13 @@
 :root {
     /* COLOURS */
-    --text-main-colour: #0a0a0a;
+    --text-main-colour: #f5f5f5;
+    --text-secondary-colour: #181818;
+    --main-body-colour: #00000a;
+    --faded-outline-colour : #535353;
+    --focus-colour: #0a0b2e;
+    --shadow-colour: #00000054;
+    --button-colour: #2555ad;
+    --button-hover-colour: #113579;
 }
 
 * {
@@ -28,6 +35,7 @@ ul, ol {
 h1 {
     font-size: 3rem;
     font-weight: 800;
+    text-align: center;
 }
 
 h2 {
@@ -43,4 +51,126 @@ h3 {
 h4 {
     font-weight: 600;
     padding-top: 1rem;
+}
+
+
+
+/* BUTTONS */
+button {
+  cursor: pointer;
+  background-color: var(--button-colour);
+  color: var(--text-main-colour);
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 100px;
+  text-decoration: none;
+}
+
+button:hover {
+  transition: all 0.2s ease-in-out;
+  background-color: var(--button-hover-colour);
+  transform: translateY(2px);
+  box-shadow: 0 4px 8px var(--shadow-colour);
+}
+
+
+
+/* INPUTS / SELECTS */
+input, select {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid var(--faded-outline-colour);
+    border-radius: 100px;
+    outline: none;
+}
+
+select, select option {
+  color: var(--text-secondary-colour);
+}
+
+input:focus {
+    border-color: var(--focus-colour);
+    box-shadow: 0 4px 8px var(--shadow-colour);
+}
+
+
+
+/* MAIN */
+.main-area {
+  background-color: var(--main-body-colour);
+    display: grid;
+    grid-template-columns: 1fr 70em 1fr;
+    grid-template-areas: ". header ."
+                        ". main .";
+}
+
+.page-header {
+  grid-area: header;
+  width: 100%;
+}
+
+.page-content {
+    grid-area: main;
+    max-width: 80em;
+    width: 100%;
+}
+
+.factor-section {
+  padding: 20px;
+}
+
+.factor-section h3 {
+  padding-top: 10px;
+}
+
+.factor-section p {
+  padding-left: 5px;
+}
+
+.factor-section select {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+
+
+/* POPUP*/
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--shadow-colour);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.popup-content {
+  background-color: var(--main-body-colour);
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 80%;
+    position: relative;
+    box-shadow: 0 4px 15px var(--shadow-colour);
+}
+
+.popup-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+
+
+/* SIZING */
+@media screen and (max-width: 70em) {
+    .main-area {
+      grid-template-columns: 1fr;
+      grid-template-areas: " header "
+                          " main ";
+  }
 }

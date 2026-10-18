@@ -3,8 +3,10 @@ import FactorSection from "./FactorSection";
 import { FACTORS } from "../data/factors";
 import { useState } from "react";
 import type { SelectionResult } from "../types/selectionResult";
+import Popup from "./Popup";
 
 export default function PageContent(): JSX.Element {
+  const [isPopupOpen, setIsPopupOpen] = useState<boolean>(false);
   const [selections, setSelections] = useState<Record<number, SelectionResult>>(
     {},
   );
@@ -21,6 +23,7 @@ export default function PageContent(): JSX.Element {
   };
 
   const test = () => {
+    setIsPopupOpen(true);
     Object.entries(selections).forEach(([factorId, result]) => {
       console.log(`ID: ${factorId}`);
       console.log(`First: ${result.first}`);
@@ -29,9 +32,7 @@ export default function PageContent(): JSX.Element {
   };
 
   return (
-    <>
-      <p>PageContent</p>
-
+    <div className="page-content">
       {FACTORS.map((factor) => (
         <FactorSection
           key={factor.id}
@@ -41,6 +42,8 @@ export default function PageContent(): JSX.Element {
       ))}
 
       <button onClick={() => test()}>Evaluate</button>
-    </>
+
+      <Popup isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} />
+    </div>
   );
 }
