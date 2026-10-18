@@ -19,7 +19,7 @@ export default function FactorSection({
     [2, "Not suitable"],
     [3, "Needs Improvement"],
     [4, "Mostly complete/functional"],
-    [5, "Perfect - fully fleshed out"],
+    [5, "Perfect - fully covered in all aspects"],
   ]);
 
   const handleFirstChange = (value: number) => {

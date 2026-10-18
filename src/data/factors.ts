@@ -2,6 +2,7 @@ export const FACTORS = [
   {
     id: 1,
     name: "Poor Deployment & Recovery Planning",
+    measurementWeight: 1,
     firstMeasurementName: "Deployment Plan",
     firstMeasurementDescription:
       "tasks necessary for the projects deployment are planned and documented with defined stages",
@@ -12,6 +13,7 @@ export const FACTORS = [
   {
     id: 2,
     name: "Poor Requirements & Scope Management",
+    measurementWeight: 8.5,
     firstMeasurementName: "Requirement Completeness",
     firstMeasurementDescription:
       "requirements can be traced directly to predefined business needs, test cases, and acceptance criteria",
@@ -22,6 +24,7 @@ export const FACTORS = [
   {
     id: 3,
     name: "Poor Governance & Management Oversight",
+    measurementWeight: 7,
     firstMeasurementName: "Governance Structure",
     firstMeasurementDescription:
       "important positions have predefined responsibilities and authority and are filled with individuals that have experience that is sufficient/relevant to their associated position",
@@ -32,6 +35,7 @@ export const FACTORS = [
   {
     id: 4,
     name: "Poor Quality Assurance & Testing",
+    measurementWeight: 8,
     firstMeasurementName: "Test Coverage",
     firstMeasurementDescription:
       "test cases are thorough and cover the delieverables expected behaviour and edge cases with defined pass/fail criteria, set completion dates, and appropriate test stratergies",
@@ -42,6 +46,7 @@ export const FACTORS = [
   {
     id: 5,
     name: "Poor Risk Management",
+    measurementWeight: 4.5,
     firstMeasurementName: "Risk Management Plan",
     firstMeasurementDescription:
       "risks are documented with calculated probabilites, impacts, and exposure ratings, with detailed mitigation stratergies, contignecy plans, and know triggers",
@@ -52,6 +57,7 @@ export const FACTORS = [
   {
     id: 6,
     name: "Poor Decision-Making & Accountability",
+    measurementWeight: 6,
     firstMeasurementName: "Decision Evidence Plan",
     firstMeasurementDescription:
       "decisions are documented with the individual that decided upon it, evidence of their thought process, and who approved it (if necessary)",
@@ -62,6 +68,7 @@ export const FACTORS = [
   {
     id: 7,
     name: "Poor Scheduling & Timeline Planning",
+    measurementWeight: 3.5,
     firstMeasurementName: "Project Timeline",
     firstMeasurementDescription:
       "project tasks with documented steps, required complexity/effort, required resources, estimated durations and completion dates",
@@ -72,6 +79,7 @@ export const FACTORS = [
   {
     id: 8,
     name: "Poor Documentation Management",
+    measurementWeight: 0.5,
     firstMeasurementName: "Documentation Completeness",
     firstMeasurementDescription:
       "project documentation has established formats and procedures that have been reviewed, shared, and agreed upon on",
@@ -82,6 +90,7 @@ export const FACTORS = [
   {
     id: 9,
     name: "Poor Training & Post-Deployment Support",
+    measurementWeight: 1.5,
     firstMeasurementName: "Training Plan",
     firstMeasurementDescription:
       "training has documented details for the tasks, materials required, locations needed, schedueld times/durations, and the qualified individuals carrying out the training",
@@ -92,6 +101,7 @@ export const FACTORS = [
   {
     id: 10,
     name: "Poor Resource & Capability Planning",
+    measurementWeight: 1.5,
     firstMeasurementName: "Competency Coverage",
     firstMeasurementDescription:
       "necessary skills required for the project are documented including the individuals that have been assigned with verified training, qualifications, or experience",
@@ -102,6 +112,7 @@ export const FACTORS = [
   {
     id: 11,
     name: "Poor Communication & Reporting",
+    measurementWeight: 2.5,
     firstMeasurementName: "Communication Plan",
     firstMeasurementDescription:
       "details of how teams/individuals are going to communicate are documented including required communication tools/methods, individuals carrying out the communications, frequency of the communications, and essential information exchanged in the communicaitor",
@@ -112,6 +123,7 @@ export const FACTORS = [
   {
     id: 12,
     name: "Poor Development Planning",
+    measurementWeight: 4,
     firstMeasurementName: "Development Plan Completeness",
     firstMeasurementDescription:
       "project architectural plans are documented and reviewed against the projects defined security standards and technical constraints",
@@ -122,6 +134,7 @@ export const FACTORS = [
   {
     id: 13,
     name: "Poor Change & Dependency Management",
+    measurementWeight: 1,
     firstMeasurementName: "Dependency Management",
     firstMeasurementDescription:
       "documented details of the identified dependencies with scheduled availability dates, contignecy plans, and alternatives if not available",

@@ -1,9 +1,12 @@
+import type { PopupMessage } from "../types/popupMessage";
+
 interface PopupProps {
   isOpen: boolean;
   onClose: () => void;
+  message: PopupMessage;
 }
 
-export default function Popup({ isOpen, onClose }: PopupProps) {
+export default function Popup({ isOpen, onClose, message }: PopupProps) {
   // If the popup isn't open, render nothing
   if (!isOpen) return null;
 
@@ -14,6 +17,10 @@ export default function Popup({ isOpen, onClose }: PopupProps) {
         <button className="popup-close-btn" onClick={onClose}>
           X
         </button>
+
+        <h2>{message.title}</h2>
+
+        <p>{message.description}</p>
       </div>
     </div>
   );

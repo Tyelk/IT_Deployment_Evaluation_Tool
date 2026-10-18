@@ -113,6 +113,7 @@ input:focus {
     grid-area: main;
     max-width: 80em;
     width: 100%;
+    padding-bottom: 5em;
 }
 
 .factor-section {
@@ -149,13 +150,23 @@ input:focus {
 }
 
 .popup-content {
-  background-color: var(--main-body-colour);
+    background-color: var(--main-body-colour);
     padding: 2rem;
     border-radius: 10px;
     max-width: 800px;
     width: 80%;
+    height: 60%;
     position: relative;
     box-shadow: 0 4px 15px var(--shadow-colour);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.popup-content p {
+  text-align: center;
 }
 
 .popup-close-btn {
