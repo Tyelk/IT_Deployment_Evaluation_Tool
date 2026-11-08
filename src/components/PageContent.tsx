@@ -117,7 +117,7 @@ export default function PageContent(): JSX.Element {
     if (!isComplete) {
       setPopupMessage({
         title: "ERROR",
-        description: "All measurements must have a selected value",
+        description: "All aspects must have a selected value",
       });
     } else {
       calculateScore();
