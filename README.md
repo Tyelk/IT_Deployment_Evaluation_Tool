@@ -1,10 +1,13 @@
 # Evaluation Tool
 
-Evaluation tool to calculate IT deployments viability.
+Evaluation tool to calculate IT project viability.
 
 ## Features
 
-- under construction
+- Individual aspects for primary factors
+- Five aspect values for increased levels of control
+- Automatic grading system
+- Suggested factor improvement
 
 ## How to Setup
 
