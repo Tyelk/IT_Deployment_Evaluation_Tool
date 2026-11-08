@@ -15,11 +15,26 @@ export default function FactorSection({
 
   const measurementOptions = new Map<number, string>([
     [0, "-"],
-    [1, "Does not exist"],
-    [2, "Not suitable"],
-    [3, "Needs Improvement"],
-    [4, "Mostly complete/functional"],
-    [5, "Perfect - fully covered in all aspects"],
+    [
+      1,
+      "1 - Does not exist in the proposal/plan or is mentioned with very little detail.",
+    ],
+    [
+      2,
+      "2 - Incomplete with missing crucial tasks/steps that are necessary to setup/use it.",
+    ],
+    [
+      3,
+      "3 - Partial complete with important details missing (start/completion dates, individuals involved, etc.).",
+    ],
+    [
+      4,
+      "4 - Mostly complete with finer details missing (exact task/step durations, exceptional edge cases, etc.).",
+    ],
+    [
+      5,
+      "5 - Perfect, the aspect fully covers everything and there is nothing more that could be added.",
+    ],
   ]);
 
   const handleFirstChange = (value: number) => {
