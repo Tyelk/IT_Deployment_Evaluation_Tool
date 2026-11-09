@@ -115,7 +115,7 @@ export const FACTORS = [
     measurementWeight: 2.5,
     firstMeasurementName: "Communication Plan",
     firstMeasurementDescription:
-      "details of how teams/individuals are going to communicate are documented including required communication tools/methods, individuals carrying out the communications, frequency of the communications, and essential information exchanged in the communicaitor",
+      "details of how teams/individuals are going to communicate are documented including required communication tools/methods, individuals carrying out the communications, frequency of the communications, and essential information exchanged in the communicaiton",
     secondMeasurementName: "Report Framework",
     secondMeasurementDescription:
       "report process is documented including defined formats, individuals creating/receiving the reports, review processes, and due dates",
